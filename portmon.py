@@ -33,12 +33,12 @@ def _take_pid_service(array):
 	return pid,service
 
 def _compare(array):
-    if os.path.isfile('log'):
+    if os.path.isfile('testlog'):
         #file exists
         last = []
 
         cur = array[:]
-        f = open('log','r')
+        f = open('testlog','r')
         last = f.read().splitlines()
 
         s1 = set(cur)
@@ -81,7 +81,7 @@ def netstat():
 
 	_compare(result)
 		
-	f = open('log','w+')
+	f = open('testlog','w+')
 	for line in result:
 		#print line
 		f.write(line)

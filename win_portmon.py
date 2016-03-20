@@ -45,16 +45,16 @@ def _compare(array):
 
         s1 = set(cur)
         s2 = set(last)
+	PortChangeLog = open('PortchangeLog','a')
         if s1.difference(s2):
-            print "alert port opened"
 	    for array in s1.difference(s2):
-		print "Open  ",time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time())),array
+		PortChangeLog.write("open  "+time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time()))+" "+array+"\n")
 
         if s2.difference(s1):
 	    for array in s2.difference(s1):
-            	print "Close ",time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time())),array
+            	PortChangeLog.write("Close "+time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time()))+" "+array+"\n")
             
-
+	PortChangeLog.close()
         f.close()
     else:
         #file not exists
@@ -85,10 +85,10 @@ def netstat():
 
 if __name__ =='__main__':
 	
-#	schedule.every(1).minutes.do(netstat)
+	schedule.every(1).minutes.do(netstat)
 
-#	while True:
-#		schedule.run_pending()
-	netstat()
+	while True:
+		schedule.run_pending()
+#	netstat()
 #	print time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
 	

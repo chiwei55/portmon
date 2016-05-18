@@ -1,0 +1,91 @@
+2016-05-18 18:53:39,Listening port open,TCP 0.0.0.0 38231 0.0.0.0 0 LISTENING,5
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASAPI32\EnableFileTracing,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASMANCS\EnableConsoleTracing,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASAPI32\EnableConsoleTracing,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASAPI32\FileTracingMask,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASMANCS\FileDirectory,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1406,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2\1406,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadDecisionReason,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\SavedLegacySettings,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadDecision,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASAPI32\MaxFileSize,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\WpadLastNetwork,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\UNCAsIntranet,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\AutoDetect,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\UNCAsIntranet,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\AutoDetect,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadDecisionReason,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadDecisionTime,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadDecision,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadNetworkName,2
+2016-04-27 13:31:05,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ProxyServer,2
+2016-04-27 13:31:05,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ProxyOverride,2
+2016-04-27 13:31:05,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\AutoConfigURL,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASMANCS\MaxFileSize,2
+2016-04-27 13:31:16,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\IntranetName,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASMANCS\FileTracingMask,2
+2016-04-27 13:31:05,file Write,C:\Users\ITLAB\Desktop\bot.exe-->C:\Users\ITLAB\AppData\Roaming\Ceag\syoh.exe,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASMANCS\EnableFileTracing,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadNetworkName,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ProxyEnable,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASAPI32\FileDirectory,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASMANCS\ConsoleTracingMask,2
+2016-04-27 13:31:16,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\IntranetName,2
+2016-04-27 13:31:16,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\ProxyBypass,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadDecisionTime,2
+2016-04-27 13:31:26,file Delete,C:\Windows\System32\cmd.exe-->C:\Users\ITLAB\Desktop\bot.exe,2
+2016-04-27 13:31:05,file Write,C:\Users\ITLAB\Desktop\bot.exe-->C:\Users\ITLAB\AppData\Roaming\Ceag\syoh.exe,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASAPI32\ConsoleTracingMask,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1609,2
+2016-04-27 13:31:05,process created,C:\Users\ITLAB\Desktop\bot.exe-->C:\Users\ITLAB\AppData\Roaming\Ceag\syoh.exe,2
+2016-04-27 13:31:16,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\ProxyBypass,2
+2016-04-27 13:31:24,registry SetValueKey,C:\Users\ITLAB\Desktop\bot.exe-->HKCU\Software\Microsoft\Vugui\Fucyq,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2\1609,2
+2016-05-18 18:54:39,Listening port open,TCP 0.0.0.0 38231 0.0.0.0 0 LISTENING,5
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASAPI32\EnableFileTracing,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASMANCS\FileDirectory,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2\1406,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\2\1609,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1406,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3\1609,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ProxyEnable,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\SavedLegacySettings,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadDecisionReason,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadDecisionTime,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadDecision,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadNetworkName,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections\DefaultConnectionSettings,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\WpadLastNetwork,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\UNCAsIntranet,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\AutoDetect,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\UNCAsIntranet,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\AutoDetect,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadDecisionReason,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadDecisionTime,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadDecision,2
+2016-04-27 13:31:16,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad\{15A5084A-B3E6-4620-AF28-18C24EB020AC}\WpadNetworkName,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASAPI32\MaxFileSize,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASMANCS\EnableFileTracing,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASMANCS\MaxFileSize,2
+2016-04-27 13:31:05,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\AutoConfigURL,2
+2016-04-27 13:31:16,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\ProxyBypass,2
+2016-04-27 13:31:16,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\IntranetName,2
+2016-04-27 13:31:16,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\ProxyBypass,2
+2016-04-27 13:31:16,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\IntranetName,2
+2016-04-27 13:31:26,file Delete,C:\Windows\System32\cmd.exe-->C:\Users\ITLAB\Desktop\bot.exe,2
+2016-04-27 13:31:05,file Write,C:\Users\ITLAB\Desktop\bot.exe-->C:\Users\ITLAB\AppData\Roaming\Ceag\syoh.exe,2
+2016-04-27 13:31:05,file Write,C:\Users\ITLAB\Desktop\bot.exe-->C:\Users\ITLAB\AppData\Roaming\Ceag\syoh.exe,2
+2016-04-27 13:31:05,process created,C:\Users\ITLAB\Desktop\bot.exe-->C:\Users\ITLAB\AppData\Roaming\Ceag\syoh.exe,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASAPI32\ConsoleTracingMask,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASAPI32\FileDirectory,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASMANCS\EnableConsoleTracing,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASAPI32\EnableConsoleTracing,2
+2016-04-27 13:31:05,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ProxyServer,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASMANCS\ConsoleTracingMask,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASMANCS\FileTracingMask,2
+2016-04-27 13:31:05,registry SetValueKey,C:\Windows\System32\taskhost.exe-->HKLM\SOFTWARE\Microsoft\Tracing\taskhost_RASAPI32\FileTracingMask,2
+2016-04-27 13:31:05,registry DeleteValueKey,C:\Windows\System32\taskhost.exe-->HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ProxyOverride,2
+2016-04-27 13:31:24,registry SetValueKey,C:\Users\ITLAB\Desktop\bot.exe-->HKCU\Software\Microsoft\Vugui\Fucyq,2
+2016-05-18 18:55:09,Regular connection,['2016-04-27 13:33:01 TCP 192.168.49.136 49159 192.168.49.128 80 CLOSE_WAIT', '2016-04-27 13:53:11 TCP 192.168.49.136 49160 192.168.49.128 80 CLOSE_WAIT', '2016-04-27 14:13:16 TCP 192.168.49.136 49161 192.168.49.128 80 CLOSE_WAIT'],2

@@ -4,6 +4,9 @@ import os
 import schedule
 import time
 import _thread
+from update import _update
+from pml_analyze import _pml_analyze
+from cpl_analyze import _cpl_analyze
 
 cmd = "netstat -anop tcp"
 
@@ -32,9 +35,6 @@ def _take_pid_service(array):
 		service = service.split('\n')[0]
 	return pid,service
 
-def _estimate(time):
-	os.system('python estimate.py '+time)
-
 def _compare(array):
     if os.path.isfile('test_log_before.txt'):
         #file exists
@@ -49,19 +49,25 @@ def _compare(array):
 		
 #        PortChangeLog = open('PortchangeLog','a')
         if s1.difference(s2):
+            changetime = time.localtime(time.time())
             for array in s1.difference(s2):
+#		PortChangeLog.write("open  "+time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time())))+" "+array+"\n")
                 if array.split(' ')[5] == "LISTENING":
-#                    PortChangeLog.write("open  "+time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time()))+" "+array+"\n")
+                    lock = _thread.allocate_lock()
+                    _thread.start_new_thread(_update, ("5", time.strftime('%Y-%m-%d %H:%M:%S', changetime), "Listening port open", array[0:-5], lock))
                     print ("Listsning port open, call script for analyze portmon log")
-                    print ("CaptureBat execute and analyze")
-                    _thread.start_new_thread(_estimate, ("2016-03-22 20:11:12",))	
-                    #os.system('python estimate.py 2016-03-22 20:11:12')
-                    #os.system('python estimate.py '+time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time())))
-
+                    print ("CaptureBat log analyze")
+                    _thread.start_new_thread(_pml_analyze, ("2016-04-27 13:32:00", lock))	
+                    _thread.start_new_thread(_cpl_analyze, ("2016-04-27 13:32:00",'any', lock))
+                    #_thread.start_new_thread(_cpl_analyze, (time.strftime('%Y-%m-%d %H:%M:%S', changetime),array.split(' ')[3]or'any', lock))
+                #if array.split(' ')[5] == "Established"
+			#whitelist cache+ blacklist
+			#pml + cpl
+                    
         if s2.difference(s1):
             for array in s2.difference(s1):
                 pass
-#                PortChangeLog.write("Close "+time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time()))+" "+array+"\n")
+#                PortChangeLog.write("Close  "+time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time()))+" "+array+"\n")
 #        PortChangeLog.close()
 		
         f.close()
@@ -70,7 +76,7 @@ def _compare(array):
         pass
 
 def netstat():
-	print (time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
+	print ('portmon '+time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
 	content = _load()
 	result = []
 

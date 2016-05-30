@@ -12,10 +12,12 @@ def _compute(array):
 	while index < len(array):
 		buf.append(array[index]-array[index-1])
 		index = index + 1
-	print (buf)
-	print (statistics.stdev(buf))
+	#print (buf)
+	#print (statistics.stdev(buf))
 	dis = statistics.stdev(buf)
-	if dis <= 45:
+	if dis == 0:
+		value = 0
+	elif dis <= 45:
 		value = 2
 	elif dis > 45 and dis < 100:
 		value = 1
@@ -25,8 +27,7 @@ def _compute(array):
 
 def main(ctime, lock):
 	result = []
-
-	f = open('test_PortchangeLog','r')
+	f = open('PortchangeLog','r')
 	tag = 0
 	array = f.read().splitlines()
 	for line in array:
@@ -53,7 +54,6 @@ def main(ctime, lock):
 		buf = []
 		event_info = []
 		tag = tag -1
-		#print (tag)
 		for line in result:	
 			if int(line.split(' ')[11]) == tag:
 				t = line.split(' ')[2] +' '+ line.split(' ')[3]
@@ -64,12 +64,9 @@ def main(ctime, lock):
 			value = _compute(buf)
 			if value > 0:
 				_thread.start_new_thread(_update, (str(value), time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())), "Regular connection", str(event_info), lock))
-				#print (event_info)
-		#print ('\n')
 	return 0
 
 def _pml_analyze(ctime, lock):
-	time.sleep(90)
+	time.sleep(3600)
 	main(ctime, lock)
 	return 0
-	

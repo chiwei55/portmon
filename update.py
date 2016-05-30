@@ -9,6 +9,7 @@ def _warn(score):
 	thershold = 100
 	if int(score) > thershold:
 		print(score + 'exceeding thershold, warning!!!\n')
+	return 0
 
 def _update(score, time, event, info, lock):
 	lock.acquire()

@@ -3,8 +3,14 @@
 import os
 import schedule
 import time
+import _thread
+from update import _update
+from pml_analyze import _pml_analyze
+from cpl_analyze import _cpl_analyze
+from whitelist import _whitelist
 
 cmd = "netstat -anop tcp"
+lock = _thread.allocate_lock() 
 
 def _load():
 	content = []
@@ -48,20 +54,63 @@ def _compare(array):
 		
         PortChangeLog = open('PortchangeLog','a')
         if s1.difference(s2):
-	    for array in s1.difference(s2):
-	        PortChangeLog.write("open  "+time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time()))+" "+array+"\n")
+            changetime = time.localtime(time.time())
+            for array in s1.difference(s2):
+                PortChangeLog.write("open  "+time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time()))+" "+array+"\n")
+                if array.split(' ')[5] == "LISTENING":
+                    _thread.start_new_thread(_update, ("5", time.strftime('%Y-%m-%d %H:%M:%S', changetime), "Listening port open", array[0:-5], lock))
+                    #Listsning port open, go into tracking and behavior analyze module
+                    _thread.start_new_thread(_pml_analyze, (time.strftime('%Y-%m-%d %H:%M:%S', changetime), lock))
+                    _thread.start_new_thread(_cpl_analyze, (time.strftime('%Y-%m-%d %H:%M:%S', changetime), 'any', lock))
+                if array.split(' ')[5] == "ESTABLISHED":
+                    hit = 0
+                    desIP = array.split(' ')[3]
 
+                    #check whitelist exist
+                    if os.path.isfile('whitelist') != True:
+                        f = open('whitelist','a')
+                        f.close()
+                    else:
+                        #check whitelist
+                        f = open('whitelist','r')
+                        if os.stat('whitelist').st_size != 0:    
+                            for line in f.read().splitlines():
+                                if desIP == line.split(',')[0]:
+                                    hit = 1
+                        f.close()
+
+                    if hit == 1:
+                        #Whitelist match, update cache
+                        _thread.start_new_thread(_whitelist, (desIP,lock))
+
+                    if hit == 0:
+                        #check blacklist
+                        f = open('blacklist','r')
+                        for line in f.read().splitlines():
+                            if desIP == line:
+                                hit = 1
+                                #Blacklist match, report and tracking module start
+                                _thread.start_new_thread(_update, ('30', time.strftime('%Y-%m-%d %H:%M:%S', changetime), 'BlackList Match', array[0:-5], lock))
+                                _thread.start_new_thread(_pml_analyze, (time.stftime('%Y-%m-%d %H:%M:%S', changetime), lock))
+                        f.close()
+
+                    if hit == 0:
+                        #New connection Not hit White/BlaclList, go into behavior analyze module
+                        _thread.start_new_thread(_cpl_analyze, (time.strftime('%Y-%m-%d %H:%M:%S', changetime), desIP, lock))			
+                    
         if s2.difference(s1):
             for array in s2.difference(s1):
-                PortChangeLog.write("Close "+time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time()))+" "+array+"\n")
+                PortChangeLog.write("Close  "+time.strftime('%Y-%m-%d %H:%M:%S' ,time.localtime(time.time()))+" "+array+"\n")
         PortChangeLog.close()
 		
         f.close()
     else:
         #file not exists
         pass
+    return 0
 
 def netstat():
+	print ('portmon '+time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
 	content = _load()
 	result = []
 
@@ -75,7 +124,7 @@ def netstat():
 		s = "{0} {1} {2} {3} {4} {5} {6}"
 		s = s.format(proto, Host_ip, Host_port, Ext_ip, Ext_port, state, pid)
 		result.append(s)	
-	#print result
+
 	_compare(result)
 		
 	f = open('log','w+')
@@ -83,13 +132,18 @@ def netstat():
 		f.write(line)
 		f.write('\n')
 	f.close()
+	return 0
+
+def _capturebat(arg):
+        os.system('\"C:\Program Files (x86)\Capture\CaptureBAT.exe\"'+arg)
 
 if __name__ =='__main__':
-	
+
+	_thread.start_new_thread(_capturebat,(' -c -l Log',))
+	#os.system('\"C:\Program Files (x86)\Capture\CaptureBAT.exe\"'+' -c -l Log')	
 	schedule.every(1).minutes.do(netstat)
 
 	while True:
 		schedule.run_pending()
 #	netstat()
-#	print time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
 	
